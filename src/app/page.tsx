@@ -8,7 +8,6 @@ const Page = async () => {
   return (
     <div className="page">
       <StoryblokStory story={data.story} />
-        <p>App / page</p>
     </div>
   );
 };

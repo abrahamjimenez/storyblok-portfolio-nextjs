@@ -7,8 +7,6 @@ import {
 const Page = ({blok}) => {
     return (
         <main>
-            <p>components / page</p>
-
             {blok.body.map((nestedBlok) => (
                 <StoryblokServerComponent blok={nestedBlok} key={nestedBlok._uid} />
             ))}

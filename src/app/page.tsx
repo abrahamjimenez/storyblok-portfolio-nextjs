@@ -8,7 +8,7 @@ const Page = async () => {
   return (
     <div className="page">
       <StoryblokStory story={data.story} />
-      <pre>{JSON.stringify(data.story, null, 2)}</pre>
+        <p>App / page</p>
     </div>
   );
 };

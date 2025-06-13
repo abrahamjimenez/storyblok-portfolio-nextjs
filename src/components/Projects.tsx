@@ -7,7 +7,7 @@ const Projects = ({blok}) => {
             <p>{blok.subheadline}</p>
 
             {blok.projects.map((project) => (
-                <div>
+                <div key={project._uid}>
                     <h3>{project.headline}</h3>
                     <p>{project.description}</p>
 

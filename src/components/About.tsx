@@ -9,7 +9,7 @@ const About = ({blok}) => {
             <p dangerouslySetInnerHTML={{ __html: render(blok.description)}}></p>
 
             {blok.social_links.map((link) => (
-                <div>
+                <div key={link._uid}>
                     <img src={link.icon.filename} alt="" width={24} height={24} />
                     <p>{link.label}</p>
                 </div>

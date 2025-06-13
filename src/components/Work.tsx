@@ -1,13 +1,14 @@
 import React from 'react';
 import { richTextResolver } from '@storyblok/richtext';
 const { render } = richTextResolver();
+
 const Work = ({blok}) => {
     return (
         <div>
             <h2>{blok.headline}</h2>
 
             {blok.work_experiences.map((work_experience) => (
-                <div>
+                <div key={work_experience._uid}>
                     <img src={work_experience.icon.filename} alt="" width={24} height={24} />
                     <h4>{work_experience.headline}</h4>
                     <h5>{work_experience.subheading}</h5>

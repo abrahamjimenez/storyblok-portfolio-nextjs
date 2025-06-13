@@ -7,7 +7,7 @@ const Skills = ({blok}) => {
             <p>{blok.subheadline}</p>
 
             {blok.skills.map((skill) => (
-                <div>
+                <div key={skill._uid}>
                     <h3>{skill.headline}</h3>
                     <p>{skill.description}</p>
                 </div>

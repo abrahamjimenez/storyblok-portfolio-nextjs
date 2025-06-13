@@ -1,0 +1,576 @@
+{
+  "components": [
+    {
+      "name": "about_me_section",
+      "display_name": null,
+      "description": "",
+      "created_at": "2025-06-11T05:35:27.202Z",
+      "updated_at": "2025-06-13T19:12:04.336Z",
+      "id": 7438035,
+      "schema": {
+        "headline": {
+          "type": "text",
+          "pos": 0,
+          "id": "QcmoiZSwQ4-693khirEdhw"
+        },
+        "description": {
+          "type": "textarea",
+          "pos": 1,
+          "id": "LaN9k18SS6K0FLFLqxjmvw",
+          "customize_toolbar": true
+        },
+        "social_links": {
+          "type": "bloks",
+          "pos": 2,
+          "id": "dEo3g4I7TrOVaZoSLjFBpQ"
+        }
+      },
+      "image": null,
+      "preview_field": null,
+      "is_root": false,
+      "preview_tmpl": null,
+      "is_nestable": true,
+      "all_presets": [],
+      "preset_id": null,
+      "real_name": "about_me_section",
+      "component_group_uuid": "a0d6490b-1588-43af-a628-37230afa29d8",
+      "color": null,
+      "icon": null,
+      "internal_tags_list": [],
+      "internal_tag_ids": [],
+      "content_type_asset_preview": null,
+      "metadata": {},
+      "component_group_name": "About Me"
+    },
+    {
+      "name": "education_section",
+      "display_name": null,
+      "description": "",
+      "created_at": "2025-06-12T01:25:20.717Z",
+      "updated_at": "2025-06-12T01:25:56.374Z",
+      "id": 7442929,
+      "schema": {
+        "headline": {
+          "type": "text",
+          "pos": 0,
+          "id": "9620AcKiSx2Vj5sb12YF4Q"
+        },
+        "education_experiences": {
+          "type": "bloks",
+          "pos": 1,
+          "id": "uLiNHVRyRSS4o2ouV0A6uA"
+        }
+      },
+      "image": null,
+      "preview_field": null,
+      "is_root": false,
+      "preview_tmpl": null,
+      "is_nestable": true,
+      "all_presets": [],
+      "preset_id": null,
+      "real_name": "education_section",
+      "component_group_uuid": null,
+      "color": null,
+      "icon": null,
+      "internal_tags_list": [],
+      "internal_tag_ids": [],
+      "content_type_asset_preview": null,
+      "metadata": {}
+    },
+    {
+      "name": "header",
+      "display_name": null,
+      "description": "",
+      "created_at": "2025-06-10T23:29:44.651Z",
+      "updated_at": "2025-06-10T23:30:26.889Z",
+      "id": 7437614,
+      "schema": {
+        "title": {
+          "type": "text",
+          "pos": 0,
+          "id": "MPwFe3v-T-G__ZOXHEa-hw"
+        },
+        "links": {
+          "type": "bloks",
+          "pos": 1,
+          "id": "fdnS14ckQ7O7XYWRO6K36Q"
+        },
+        "icon": {
+          "type": "asset",
+          "pos": 2,
+          "filetypes": [
+            "images"
+          ],
+          "id": "QSkqT6pxTpakbWNSXqDYJg"
+        }
+      },
+      "image": null,
+      "preview_field": null,
+      "is_root": false,
+      "preview_tmpl": null,
+      "is_nestable": true,
+      "all_presets": [],
+      "preset_id": null,
+      "real_name": "header",
+      "component_group_uuid": "20d04af1-97bd-4396-8692-661cc6d5c169",
+      "color": null,
+      "icon": null,
+      "internal_tags_list": [],
+      "internal_tag_ids": [],
+      "content_type_asset_preview": null,
+      "metadata": {},
+      "component_group_name": "Header"
+    },
+    {
+      "name": "hero_section",
+      "display_name": null,
+      "description": "",
+      "created_at": "2025-06-10T23:34:04.941Z",
+      "updated_at": "2025-06-13T19:11:23.244Z",
+      "id": 7437616,
+      "schema": {
+        "eyebrow": {
+          "type": "text",
+          "pos": 0,
+          "id": "EitEj883Qsi_gnxuQ2WF4w"
+        },
+        "headline": {
+          "type": "text",
+          "pos": 1,
+          "id": "zY9mIbWrS_iLnYbqTjwXDg"
+        },
+        "description": {
+          "type": "textarea",
+          "pos": 2,
+          "description": "",
+          "id": "se6QhG2DS7OzEipEptbl3g",
+          "customize_toolbar": true
+        }
+      },
+      "image": null,
+      "preview_field": null,
+      "is_root": false,
+      "preview_tmpl": null,
+      "is_nestable": true,
+      "all_presets": [],
+      "preset_id": null,
+      "real_name": "hero_section",
+      "component_group_uuid": "f253bb07-82e9-4f57-9072-cda7e9c09a39",
+      "color": null,
+      "icon": null,
+      "internal_tags_list": [],
+      "internal_tag_ids": [],
+      "content_type_asset_preview": null,
+      "metadata": {},
+      "component_group_name": "Hero"
+    },
+    {
+      "name": "nav-links",
+      "display_name": null,
+      "description": "",
+      "created_at": "2025-06-10T23:31:21.948Z",
+      "updated_at": "2025-06-10T23:31:39.958Z",
+      "id": 7437615,
+      "schema": {
+        "label": {
+          "type": "text",
+          "pos": 0,
+          "id": "U-9U8eKgQnKnJn1Vf8q6HQ"
+        }
+      },
+      "image": null,
+      "preview_field": null,
+      "is_root": false,
+      "preview_tmpl": null,
+      "is_nestable": true,
+      "all_presets": [],
+      "preset_id": null,
+      "real_name": "nav-links",
+      "component_group_uuid": "20d04af1-97bd-4396-8692-661cc6d5c169",
+      "color": null,
+      "icon": null,
+      "internal_tags_list": [],
+      "internal_tag_ids": [],
+      "content_type_asset_preview": null,
+      "metadata": {},
+      "component_group_name": "Header"
+    },
+    {
+      "name": "page",
+      "display_name": null,
+      "description": null,
+      "created_at": "2025-06-07T19:42:06.155Z",
+      "updated_at": "2025-06-11T05:34:09.562Z",
+      "id": 7429683,
+      "schema": {
+        "header": {
+          "type": "bloks",
+          "id": "3XR5E22JRsego3hYAJd5Kg",
+          "display_name": "Header",
+          "description": "",
+          "tooltip": false,
+          "pos": 1
+        },
+        "body": {
+          "type": "bloks",
+          "pos": 2,
+          "id": "TZH21hGfQH2QPybgYn6NoA"
+        }
+      },
+      "image": null,
+      "preview_field": null,
+      "is_root": false,
+      "preview_tmpl": null,
+      "is_nestable": true,
+      "all_presets": [],
+      "preset_id": null,
+      "real_name": "page",
+      "component_group_uuid": "8466f390-dc50-4ce1-8dc6-cacfdc555449",
+      "color": null,
+      "icon": null,
+      "internal_tags_list": [],
+      "internal_tag_ids": [],
+      "content_type_asset_preview": null,
+      "metadata": {},
+      "component_group_name": "Pages"
+    },
+    {
+      "name": "project",
+      "display_name": null,
+      "description": "",
+      "created_at": "2025-06-12T01:46:45.138Z",
+      "updated_at": "2025-06-12T02:07:01.403Z",
+      "id": 7442965,
+      "schema": {
+        "image": {
+          "type": "asset",
+          "pos": 0,
+          "filetypes": [
+            "images"
+          ],
+          "id": "OArCZEYgQ-C2cewKYlc84Q"
+        },
+        "headline": {
+          "type": "text",
+          "pos": 1,
+          "id": "V6sjaYEXTVupbpKqS9aDOw"
+        },
+        "subheadline": {
+          "type": "text",
+          "pos": 2,
+          "id": "iPFHeUu2S3eIXrDeZfmvzw"
+        },
+        "link": {
+          "type": "multilink",
+          "pos": 3,
+          "id": "1sFVmSrYSruV0YmQQLiY8A"
+        },
+        "description": {
+          "type": "textarea",
+          "pos": 4,
+          "id": "o5KsaKoLQl676NIomDbqaA"
+        },
+        "role": {
+          "type": "textarea",
+          "pos": 5,
+          "id": "Dpt38IDySzS-sPNl6MmHKQ"
+        }
+      },
+      "image": null,
+      "preview_field": null,
+      "is_root": false,
+      "preview_tmpl": null,
+      "is_nestable": true,
+      "all_presets": [],
+      "preset_id": null,
+      "real_name": "project",
+      "component_group_uuid": null,
+      "color": null,
+      "icon": null,
+      "internal_tags_list": [],
+      "internal_tag_ids": [],
+      "content_type_asset_preview": null,
+      "metadata": {}
+    },
+    {
+      "name": "projects_section",
+      "display_name": null,
+      "description": "",
+      "created_at": "2025-06-12T01:44:48.055Z",
+      "updated_at": "2025-06-12T02:07:55.620Z",
+      "id": 7442964,
+      "schema": {
+        "headline": {
+          "type": "text",
+          "pos": 0,
+          "id": "PDwPdxN9QciUdfidn3p7EA"
+        },
+        "description": {
+          "type": "text",
+          "pos": 1,
+          "id": "YqzJH0v8R8iOh6IyJWkyhg"
+        },
+        "projects": {
+          "type": "bloks",
+          "pos": 2,
+          "id": "uosX62u2Qi2ueNLW6_r3XA",
+          "restrict_type": "",
+          "restrict_components": false,
+          "component_group_whitelist": []
+        }
+      },
+      "image": null,
+      "preview_field": null,
+      "is_root": false,
+      "preview_tmpl": null,
+      "is_nestable": true,
+      "all_presets": [],
+      "preset_id": null,
+      "real_name": "projects_section",
+      "component_group_uuid": null,
+      "color": null,
+      "icon": null,
+      "internal_tags_list": [],
+      "internal_tag_ids": [],
+      "content_type_asset_preview": null,
+      "metadata": {}
+    },
+    {
+      "name": "skill",
+      "display_name": null,
+      "description": "",
+      "created_at": "2025-06-12T01:38:37.114Z",
+      "updated_at": "2025-06-12T01:39:06.583Z",
+      "id": 7442931,
+      "schema": {
+        "headline": {
+          "type": "text",
+          "pos": 0,
+          "id": "g3pK2pAlR6KYgD9qvjdcqA"
+        },
+        "description": {
+          "type": "textarea",
+          "pos": 1,
+          "id": "h6YukvWxR3eW_B16rjbM5w"
+        }
+      },
+      "image": null,
+      "preview_field": null,
+      "is_root": false,
+      "preview_tmpl": null,
+      "is_nestable": true,
+      "all_presets": [],
+      "preset_id": null,
+      "real_name": "skill",
+      "component_group_uuid": null,
+      "color": null,
+      "icon": null,
+      "internal_tags_list": [],
+      "internal_tag_ids": [],
+      "content_type_asset_preview": null,
+      "metadata": {}
+    },
+    {
+      "name": "skills_section",
+      "display_name": null,
+      "description": "",
+      "created_at": "2025-06-12T01:37:47.819Z",
+      "updated_at": "2025-06-12T01:39:47.150Z",
+      "id": 7442930,
+      "schema": {
+        "headline": {
+          "type": "text",
+          "pos": 0,
+          "id": "yC2fKCCfR7WSoEHhtqWL3A"
+        },
+        "subheadline": {
+          "type": "text",
+          "pos": 1,
+          "id": "Z6PPwW9QT5yay-5a-dDJ5A"
+        },
+        "skills": {
+          "type": "bloks",
+          "pos": 2,
+          "id": "S4MJEZOxT4m-IqYYF1BtPA"
+        }
+      },
+      "image": null,
+      "preview_field": null,
+      "is_root": false,
+      "preview_tmpl": null,
+      "is_nestable": true,
+      "all_presets": [],
+      "preset_id": null,
+      "real_name": "skills_section",
+      "component_group_uuid": null,
+      "color": null,
+      "icon": null,
+      "internal_tags_list": [],
+      "internal_tag_ids": [],
+      "content_type_asset_preview": null,
+      "metadata": {}
+    },
+    {
+      "name": "social_link",
+      "display_name": null,
+      "description": "",
+      "created_at": "2025-06-11T05:36:19.660Z",
+      "updated_at": "2025-06-11T05:36:44.556Z",
+      "id": 7438036,
+      "schema": {
+        "icon": {
+          "type": "asset",
+          "pos": 0,
+          "filetypes": [
+            "images"
+          ],
+          "id": "sYREdn13Q26xKO-AKLMOMA"
+        },
+        "label": {
+          "type": "text",
+          "pos": 1,
+          "id": "a8cgCFZyRPywXGLAlOO46w"
+        }
+      },
+      "image": null,
+      "preview_field": null,
+      "is_root": false,
+      "preview_tmpl": null,
+      "is_nestable": true,
+      "all_presets": [],
+      "preset_id": null,
+      "real_name": "social_link",
+      "component_group_uuid": "a0d6490b-1588-43af-a628-37230afa29d8",
+      "color": null,
+      "icon": null,
+      "internal_tags_list": [],
+      "internal_tag_ids": [],
+      "content_type_asset_preview": null,
+      "metadata": {},
+      "component_group_name": "About Me"
+    },
+    {
+      "name": "work_experience",
+      "display_name": "Experience",
+      "description": "",
+      "created_at": "2025-06-11T05:48:17.176Z",
+      "updated_at": "2025-06-12T01:24:49.776Z",
+      "id": 7438081,
+      "schema": {
+        "icon": {
+          "type": "asset",
+          "pos": 0,
+          "filetypes": [
+            "images"
+          ],
+          "id": "G6bYA2G2Rpad2wfhzhHYJw"
+        },
+        "headline": {
+          "type": "text",
+          "pos": 1,
+          "id": "yGRkHVTTR9OsAjbJCmU6wg"
+        },
+        "subheading": {
+          "type": "text",
+          "pos": 2,
+          "id": "e1vlpXWvTyqzvm2PhLFWuQ"
+        },
+        "date": {
+          "type": "text",
+          "pos": 3,
+          "id": "dsEYrT4fSXCWSmF5_HVShw"
+        },
+        "job_description": {
+          "type": "richtext",
+          "pos": 4,
+          "customize_toolbar": true,
+          "id": "3RPdX6VhThWNpYSdpP_-4Q",
+          "toolbar": [
+            "list",
+            "olist"
+          ]
+        }
+      },
+      "image": null,
+      "preview_field": null,
+      "is_root": false,
+      "preview_tmpl": null,
+      "is_nestable": true,
+      "all_presets": [],
+      "preset_id": null,
+      "real_name": "Experience",
+      "component_group_uuid": null,
+      "color": null,
+      "icon": null,
+      "internal_tags_list": [],
+      "internal_tag_ids": [],
+      "content_type_asset_preview": null,
+      "metadata": {}
+    },
+    {
+      "name": "work_experience_section",
+      "display_name": null,
+      "description": "",
+      "created_at": "2025-06-11T05:47:19.381Z",
+      "updated_at": "2025-06-13T18:42:05.306Z",
+      "id": 7438078,
+      "schema": {
+        "headline": {
+          "type": "text",
+          "pos": 0,
+          "id": "lBd0SgjiRbekCBurgF02Fw"
+        },
+        "work_experiences": {
+          "type": "bloks",
+          "pos": 1,
+          "id": "JKUqdyhPQBCSs_Ldg3aROQ"
+        }
+      },
+      "image": null,
+      "preview_field": null,
+      "is_root": false,
+      "preview_tmpl": null,
+      "is_nestable": true,
+      "all_presets": [],
+      "preset_id": null,
+      "real_name": "work_experience_section",
+      "component_group_uuid": null,
+      "color": null,
+      "icon": null,
+      "internal_tags_list": [],
+      "internal_tag_ids": [],
+      "content_type_asset_preview": null,
+      "metadata": {}
+    }
+  ],
+  "component_groups": [
+    {
+      "name": "About Me",
+      "id": 562559,
+      "uuid": "a0d6490b-1588-43af-a628-37230afa29d8",
+      "parent_id": null,
+      "parent_uuid": null
+    },
+    {
+      "name": "Header",
+      "id": 562557,
+      "uuid": "20d04af1-97bd-4396-8692-661cc6d5c169",
+      "parent_id": null,
+      "parent_uuid": null
+    },
+    {
+      "name": "Hero",
+      "id": 562558,
+      "uuid": "f253bb07-82e9-4f57-9072-cda7e9c09a39",
+      "parent_id": null,
+      "parent_uuid": null
+    },
+    {
+      "name": "Pages",
+      "id": 562560,
+      "uuid": "8466f390-dc50-4ce1-8dc6-cacfdc555449",
+      "parent_id": null,
+      "parent_uuid": null
+    }
+  ]
+}

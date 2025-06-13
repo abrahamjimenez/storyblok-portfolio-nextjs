@@ -1,14 +1,19 @@
 import React from 'react';
 import {richTextResolver} from "@storyblok/richtext";
+import type {AboutMeSectionStoryblok} from "@/types/component-types-sb";
+
 const { render } = richTextResolver();
 
-const About = ({blok}) => {
+const About = ({blok}: {blok: AboutMeSectionStoryblok}) => {
     return (
         <div>
-            <h2>{blok.headline}</h2>
-            <p dangerouslySetInnerHTML={{ __html: render(blok.description)}}></p>
+            <h2>{blok?.headline}</h2>
 
-            {blok.social_links.map((link) => (
+            {blok.description && (
+                <p dangerouslySetInnerHTML={{ __html: render(blok.description)}}></p>
+            )}
+
+            {blok?.social_links?.map((link) => (
                 <div key={link._uid}>
                     <img src={link.icon.filename} alt="" width={24} height={24} />
                     <p>{link.label}</p>

@@ -6,7 +6,9 @@
     "dev": "next dev --turbopack --experimental-https",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "pull-sb-components": "storyblok pull-components --space 341746 && mv ./components.341746.json ./src/types/components.341746.json",
+    "generate-sb-types": "storyblok generate-typescript-typedefs --sourceFilePaths ./src/types/components.341746.json --destinationFilePath ./src/types/component-types-sb.d.ts"
   },
   "dependencies": {
     "@storyblok/react": "^5.0.0",

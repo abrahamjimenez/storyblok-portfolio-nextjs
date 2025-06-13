@@ -15,7 +15,7 @@ const Page = async () => {
 
 export default Page;
 
-export async function fetchData() {
+async function fetchData() {
   const storyblokApi = getStoryblokApi();
   return await storyblokApi.get(`cdn/stories/home`, { version: "draft" });
 }

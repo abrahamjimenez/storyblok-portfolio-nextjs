@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import {
+import type {
   EducationExperienceStoryblok,
   EducationSectionStoryblok,
 } from "@/types/component-types-sb";

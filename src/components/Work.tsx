@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { richTextResolver } from "@storyblok/richtext";
-import {
+import type {
   WorkExperienceSectionStoryblok,
   WorkExperienceStoryblok,
 } from "@/types/component-types-sb";

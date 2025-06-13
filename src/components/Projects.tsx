@@ -1,5 +1,5 @@
 import React from "react";
-import {
+import type {
   ProjectsSectionStoryblok,
   ProjectStoryblok,
 } from "@/types/component-types-sb";

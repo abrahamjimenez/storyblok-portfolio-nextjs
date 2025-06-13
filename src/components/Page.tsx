@@ -1,7 +1,5 @@
 import React from "react";
-import {
-  StoryblokServerComponent,
-} from "@storyblok/react/rsc";
+import { StoryblokServerComponent } from "@storyblok/react/rsc";
 import { PageStoryblok } from "@/types/component-types-sb";
 
 const Page = ({ blok }: { blok: PageStoryblok }) => {

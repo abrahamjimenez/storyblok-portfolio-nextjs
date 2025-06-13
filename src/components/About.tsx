@@ -1,6 +1,7 @@
 import React from 'react';
 import {richTextResolver} from "@storyblok/richtext";
 import type {AboutMeSectionStoryblok} from "@/types/component-types-sb";
+import {StoryblokRichTextNode} from "@storyblok/react";
 
 const { render } = richTextResolver();
 
@@ -9,9 +10,7 @@ const About = ({blok}: {blok: AboutMeSectionStoryblok}) => {
         <div>
             <h2>{blok?.headline}</h2>
 
-            {blok.description && (
-                <p dangerouslySetInnerHTML={{ __html: render(blok.description)}}></p>
-            )}
+            {blok?.description}
 
             {blok?.social_links?.map((link) => (
                 <div key={link._uid}>

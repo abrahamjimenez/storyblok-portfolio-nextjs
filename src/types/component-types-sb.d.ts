@@ -6,6 +6,7 @@ export interface AboutMeSectionStoryblok {
   description?: string;
   social_links?: (
     | AboutMeSectionStoryblok
+    | EducationExperienceStoryblok
     | EducationSectionStoryblok
     | HeaderStoryblok
     | HeroSectionStoryblok
@@ -20,28 +21,6 @@ export interface AboutMeSectionStoryblok {
     | WorkExperienceSectionStoryblok
   )[];
   component: "about_me_section";
-  _uid: string;
-  [k: string]: any;
-}
-
-export interface EducationSectionStoryblok {
-  headline?: string;
-  education_experiences?: (
-    | AboutMeSectionStoryblok
-    | EducationSectionStoryblok
-    | HeaderStoryblok
-    | HeroSectionStoryblok
-    | NavLinksStoryblok
-    | PageStoryblok
-    | ProjectStoryblok
-    | ProjectsSectionStoryblok
-    | SkillStoryblok
-    | SkillsSectionStoryblok
-    | SocialLinkStoryblok
-    | WorkExperienceStoryblok
-    | WorkExperienceSectionStoryblok
-  )[];
-  component: "education_section";
   _uid: string;
   [k: string]: any;
 }
@@ -71,10 +50,54 @@ export interface AssetStoryblok {
   [k: string]: any;
 }
 
+export interface RichtextStoryblok {
+  type: string;
+  content?: RichtextStoryblok[];
+  marks?: RichtextStoryblok[];
+  attrs?: any;
+  text?: string;
+  [k: string]: any;
+}
+
+export interface EducationExperienceStoryblok {
+  icon?: AssetStoryblok;
+  headline?: string;
+  subheading?: string;
+  date?: string;
+  job_description?: RichtextStoryblok;
+  component: "education_experience";
+  _uid: string;
+  [k: string]: any;
+}
+
+export interface EducationSectionStoryblok {
+  headline?: string;
+  education_experiences?: (
+    | AboutMeSectionStoryblok
+    | EducationExperienceStoryblok
+    | EducationSectionStoryblok
+    | HeaderStoryblok
+    | HeroSectionStoryblok
+    | NavLinksStoryblok
+    | PageStoryblok
+    | ProjectStoryblok
+    | ProjectsSectionStoryblok
+    | SkillStoryblok
+    | SkillsSectionStoryblok
+    | SocialLinkStoryblok
+    | WorkExperienceStoryblok
+    | WorkExperienceSectionStoryblok
+  )[];
+  component: "education_section";
+  _uid: string;
+  [k: string]: any;
+}
+
 export interface HeaderStoryblok {
   title?: string;
   links?: (
     | AboutMeSectionStoryblok
+    | EducationExperienceStoryblok
     | EducationSectionStoryblok
     | HeaderStoryblok
     | HeroSectionStoryblok
@@ -113,6 +136,7 @@ export interface NavLinksStoryblok {
 export interface PageStoryblok {
   header?: (
     | AboutMeSectionStoryblok
+    | EducationExperienceStoryblok
     | EducationSectionStoryblok
     | HeaderStoryblok
     | HeroSectionStoryblok
@@ -128,6 +152,7 @@ export interface PageStoryblok {
   )[];
   body?: (
     | AboutMeSectionStoryblok
+    | EducationExperienceStoryblok
     | EducationSectionStoryblok
     | HeaderStoryblok
     | HeroSectionStoryblok
@@ -237,6 +262,7 @@ export interface ProjectsSectionStoryblok {
   description?: string;
   projects?: (
     | AboutMeSectionStoryblok
+    | EducationExperienceStoryblok
     | EducationSectionStoryblok
     | HeaderStoryblok
     | HeroSectionStoryblok
@@ -268,6 +294,7 @@ export interface SkillsSectionStoryblok {
   subheadline?: string;
   skills?: (
     | AboutMeSectionStoryblok
+    | EducationExperienceStoryblok
     | EducationSectionStoryblok
     | HeaderStoryblok
     | HeroSectionStoryblok
@@ -294,15 +321,6 @@ export interface SocialLinkStoryblok {
   [k: string]: any;
 }
 
-export interface RichtextStoryblok {
-  type: string;
-  content?: RichtextStoryblok[];
-  marks?: RichtextStoryblok[];
-  attrs?: any;
-  text?: string;
-  [k: string]: any;
-}
-
 export interface WorkExperienceStoryblok {
   icon?: AssetStoryblok;
   headline?: string;
@@ -318,6 +336,7 @@ export interface WorkExperienceSectionStoryblok {
   headline?: string;
   work_experiences?: (
     | AboutMeSectionStoryblok
+    | EducationExperienceStoryblok
     | EducationSectionStoryblok
     | HeaderStoryblok
     | HeroSectionStoryblok

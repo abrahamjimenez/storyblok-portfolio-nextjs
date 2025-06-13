@@ -43,6 +43,64 @@
       "component_group_name": "About Me"
     },
     {
+      "name": "education_experience",
+      "display_name": "Experience",
+      "description": "",
+      "created_at": "2025-06-13T20:28:30.602Z",
+      "updated_at": "2025-06-13T20:28:53.323Z",
+      "id": 7454056,
+      "schema": {
+        "icon": {
+          "type": "asset",
+          "pos": 0,
+          "filetypes": [
+            "images"
+          ],
+          "id": "G6bYA2G2Rpad2wfhzhHYJw"
+        },
+        "headline": {
+          "type": "text",
+          "pos": 1,
+          "id": "yGRkHVTTR9OsAjbJCmU6wg"
+        },
+        "subheading": {
+          "type": "text",
+          "pos": 2,
+          "id": "e1vlpXWvTyqzvm2PhLFWuQ"
+        },
+        "date": {
+          "type": "text",
+          "pos": 3,
+          "id": "dsEYrT4fSXCWSmF5_HVShw"
+        },
+        "job_description": {
+          "type": "richtext",
+          "pos": 4,
+          "customize_toolbar": true,
+          "id": "3RPdX6VhThWNpYSdpP_-4Q",
+          "toolbar": [
+            "list",
+            "olist"
+          ]
+        }
+      },
+      "image": null,
+      "preview_field": null,
+      "is_root": false,
+      "preview_tmpl": null,
+      "is_nestable": true,
+      "all_presets": [],
+      "preset_id": null,
+      "real_name": "Experience",
+      "component_group_uuid": null,
+      "color": null,
+      "icon": null,
+      "internal_tags_list": [],
+      "internal_tag_ids": [],
+      "content_type_asset_preview": null,
+      "metadata": {}
+    },
+    {
       "name": "education_section",
       "display_name": null,
       "description": "",

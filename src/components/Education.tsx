@@ -1,23 +1,29 @@
 import React from 'react';
-import { richTextResolver } from '@storyblok/richtext';
-const { render } = richTextResolver();
+import {
+    EducationExperienceStoryblok,
+    EducationSectionStoryblok,
+    WorkExperienceStoryblok
+} from "@/types/component-types-sb";
 
-const Education = ({blok}) => {
+const Education = ({blok}: {blok: EducationSectionStoryblok}) => {
     return (
         <div>
-            <h2>{blok.headline}</h2>
+            <h2>{blok?.headline}</h2>
 
-            {blok.education_experiences.map((work_experience) => (
-                <div key={work_experience._uid}>
-                    <img src={work_experience.icon.filename} alt="" width={24} height={24} />
-                    <h4>{work_experience.headline}</h4>
-                    <h5>{work_experience.subheading}</h5>
-                    <h6>{work_experience.date}</h6>
+            {blok?.education_experiences?.map((item) => {
+                if (item.component === "education_experience") {
+                    const education_experience = item as EducationExperienceStoryblok
 
-                    <p dangerouslySetInnerHTML={{ __html: render(work_experience.job_description)}}></p>
-
-                </div>
-            ))}
+                    return (
+                        <div key={education_experience._uid}>
+                            <img src={education_experience?.icon?.filename as string} alt="" width={24} height={24} />
+                            <h4>{education_experience?.headline}</h4>
+                            <h5>{education_experience?.subheading}</h5>
+                            <h6>{education_experience?.date}</h6>
+                        </div>
+                    )
+                }
+            })}
         </div>
     );
 };

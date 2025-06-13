@@ -1,10 +1,11 @@
 import React from "react";
 import Image from "next/image";
+import { storyblokEditable } from "@storyblok/react/rsc";
 import type { AboutMeSectionStoryblok } from "@/types/component-types-sb";
 
 const About = ({ blok }: { blok: AboutMeSectionStoryblok }) => {
   return (
-    <div>
+    <div {...storyblokEditable(blok)}>
       <h2>{blok?.headline}</h2>
 
       {blok?.description}

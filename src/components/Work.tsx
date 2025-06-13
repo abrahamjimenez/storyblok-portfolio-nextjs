@@ -6,12 +6,13 @@ import type {
   WorkExperienceStoryblok,
 } from "@/types/component-types-sb";
 import { StoryblokRichTextNode } from "@storyblok/react";
+import {storyblokEditable} from "@storyblok/react/rsc";
 
 const { render } = richTextResolver();
 
 const Work = ({ blok }: { blok: WorkExperienceSectionStoryblok }) => {
   return (
-    <div>
+    <div {...storyblokEditable(blok)}>
       <h2>{blok?.headline}</h2>
 
       {blok?.work_experiences?.map((item) => {

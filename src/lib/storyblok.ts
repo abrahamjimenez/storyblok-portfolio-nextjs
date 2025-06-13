@@ -20,6 +20,6 @@ export const getStoryblokApi = storyblokInit({
     work_experience_section: Work,
     education_section: Education,
     skills_section: Skills,
-    projects_section: Projects
-  }
+    projects_section: Projects,
+  },
 });

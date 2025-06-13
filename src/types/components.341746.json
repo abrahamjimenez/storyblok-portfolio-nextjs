@@ -53,9 +53,7 @@
         "icon": {
           "type": "asset",
           "pos": 0,
-          "filetypes": [
-            "images"
-          ],
+          "filetypes": ["images"],
           "id": "G6bYA2G2Rpad2wfhzhHYJw"
         },
         "headline": {
@@ -78,10 +76,7 @@
           "pos": 4,
           "customize_toolbar": true,
           "id": "3RPdX6VhThWNpYSdpP_-4Q",
-          "toolbar": [
-            "list",
-            "olist"
-          ]
+          "toolbar": ["list", "olist"]
         }
       },
       "image": null,
@@ -156,9 +151,7 @@
         "icon": {
           "type": "asset",
           "pos": 2,
-          "filetypes": [
-            "images"
-          ],
+          "filetypes": ["images"],
           "id": "QSkqT6pxTpakbWNSXqDYJg"
         }
       },
@@ -303,9 +296,7 @@
         "image": {
           "type": "asset",
           "pos": 0,
-          "filetypes": [
-            "images"
-          ],
+          "filetypes": ["images"],
           "id": "OArCZEYgQ-C2cewKYlc84Q"
         },
         "headline": {
@@ -479,9 +470,7 @@
         "icon": {
           "type": "asset",
           "pos": 0,
-          "filetypes": [
-            "images"
-          ],
+          "filetypes": ["images"],
           "id": "sYREdn13Q26xKO-AKLMOMA"
         },
         "label": {
@@ -518,9 +507,7 @@
         "icon": {
           "type": "asset",
           "pos": 0,
-          "filetypes": [
-            "images"
-          ],
+          "filetypes": ["images"],
           "id": "G6bYA2G2Rpad2wfhzhHYJw"
         },
         "headline": {
@@ -543,10 +530,7 @@
           "pos": 4,
           "customize_toolbar": true,
           "id": "3RPdX6VhThWNpYSdpP_-4Q",
-          "toolbar": [
-            "list",
-            "olist"
-          ]
+          "toolbar": ["list", "olist"]
         }
       },
       "image": null,

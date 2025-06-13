@@ -1,17 +1,18 @@
-import React from 'react';
+import React from "react";
 import {
-    storyblokEditable,
-    StoryblokServerComponent,
-} from '@storyblok/react/rsc';
+  storyblokEditable,
+  StoryblokServerComponent,
+} from "@storyblok/react/rsc";
+import { PageStoryblok } from "@/types/component-types-sb";
 
-const Page = ({blok}) => {
-    return (
-        <main>
-            {blok.body.map((nestedBlok) => (
-                <StoryblokServerComponent blok={nestedBlok} key={nestedBlok._uid} />
-            ))}
-        </main>
-    );
+const Page = ({ blok }: { blok: PageStoryblok }) => {
+  return (
+    <main>
+      {blok?.body?.map((nestedBlok) => (
+        <StoryblokServerComponent blok={nestedBlok} key={nestedBlok?._uid} />
+      ))}
+    </main>
+  );
 };
 
 export default Page;

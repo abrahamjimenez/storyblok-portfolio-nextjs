@@ -249,7 +249,10 @@ export interface ProjectStoryblok {
   image?: AssetStoryblok;
   headline?: string;
   subheadline?: string;
-  link?: Exclude<MultilinkStoryblok, {linktype?: "email"} | {linktype?: "asset"}>;
+  link?: Exclude<
+    MultilinkStoryblok,
+    { linktype?: "email" } | { linktype?: "asset" }
+  >;
   description?: string;
   role?: string;
   component: "project";

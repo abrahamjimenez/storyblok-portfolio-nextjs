@@ -22,6 +22,9 @@ importers:
       react-dom:
         specifier: ^19.0.0
         version: 19.1.0(react@19.1.0)
+      storyblok-js-client:
+        specifier: ^7.0.0
+        version: 7.0.0
     devDependencies:
       "@eslint/eslintrc":
         specifier: ^3

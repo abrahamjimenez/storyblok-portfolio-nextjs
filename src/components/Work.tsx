@@ -1,4 +1,5 @@
 import React from "react";
+import Image from 'next/image'
 import { richTextResolver } from "@storyblok/richtext";
 import {
   WorkExperienceSectionStoryblok,
@@ -19,7 +20,7 @@ const Work = ({ blok }: { blok: WorkExperienceSectionStoryblok }) => {
 
           return (
             <div key={work_experience?._uid}>
-              <img
+              <Image
                 src={work_experience?.icon?.filename as string}
                 alt=""
                 width={24}

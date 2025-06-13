@@ -1,6 +1,5 @@
 import React from "react";
 import {
-  storyblokEditable,
   StoryblokServerComponent,
 } from "@storyblok/react/rsc";
 import { PageStoryblok } from "@/types/component-types-sb";

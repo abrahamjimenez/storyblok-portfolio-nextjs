@@ -1,8 +1,8 @@
 import React from "react";
+import Image from "next/image";
 import {
   EducationExperienceStoryblok,
   EducationSectionStoryblok,
-  WorkExperienceStoryblok,
 } from "@/types/component-types-sb";
 
 const Education = ({ blok }: { blok: EducationSectionStoryblok }) => {
@@ -16,7 +16,7 @@ const Education = ({ blok }: { blok: EducationSectionStoryblok }) => {
 
           return (
             <div key={education_experience._uid}>
-              <img
+              <Image
                 src={education_experience?.icon?.filename as string}
                 alt=""
                 width={24}

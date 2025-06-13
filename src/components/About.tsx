@@ -1,9 +1,6 @@
 import React from "react";
-import { richTextResolver } from "@storyblok/richtext";
+import Image from "next/image"
 import type { AboutMeSectionStoryblok } from "@/types/component-types-sb";
-import { StoryblokRichTextNode } from "@storyblok/react";
-
-const { render } = richTextResolver();
 
 const About = ({ blok }: { blok: AboutMeSectionStoryblok }) => {
   return (
@@ -14,7 +11,7 @@ const About = ({ blok }: { blok: AboutMeSectionStoryblok }) => {
 
       {blok?.social_links?.map((link) => (
         <div key={link._uid}>
-          <img src={link.icon.filename} alt="" width={24} height={24} />
+          <Image src={link.icon.filename} alt="" width={24} height={24} />
           <p>{link.label}</p>
         </div>
       ))}

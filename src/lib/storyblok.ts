@@ -7,8 +7,8 @@ import Education from "@/components/Education";
 import Skills from "@/components/Skills";
 import Projects from "@/components/Projects";
 
-export const getStoryblokApi= storyblokInit({
-  accessToken: process.env.NEXT_PUBLIC_NODE_ENV === "development" ? process.env.NEXT_PUBLIC_STORYBLOK_PREVIEW_ACCESS_TOKEN : process.env.NEXT_PUBLIC_STORYBLOK_PUBLIC_ACCESS_TOKEN,
+export const getStoryblokApi= (isEnabled: boolean) => storyblokInit({
+  accessToken: process.env.NEXT_PUBLIC_NODE_ENV === "development" || isEnabled ? process.env.NEXT_PUBLIC_STORYBLOK_PREVIEW_ACCESS_TOKEN : process.env.NEXT_PUBLIC_STORYBLOK_PUBLIC_ACCESS_TOKEN,
   use: [apiPlugin],
   apiOptions: {
     region: "eu",

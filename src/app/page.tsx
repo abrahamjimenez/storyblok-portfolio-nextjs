@@ -1,14 +1,12 @@
 import React from "react";
-import {draftMode} from "next/headers";
 import { getStoryblokApi } from "@/lib/storyblok";
 import { StoryblokStory } from "@storyblok/react/rsc";
 
 async function fetchData() {
-  const {isEnabled} = await draftMode()
   const storyblokApi = getStoryblokApi();
 
   return await storyblokApi.get(`cdn/stories/home`, {
-    version: process.env.NEXT_PUBLI_NODE_ENV === "development" || isEnabled ? "draft" : "published",
+    version: process.env.NEXT_PUBLIC_NODE_ENV === "development" ? "draft" : "published",
   });
 }
 

@@ -4,7 +4,7 @@ import type {
   EducationExperienceStoryblok,
   EducationSectionStoryblok,
 } from "@/types/component-types-sb";
-import {storyblokEditable} from "@storyblok/react/rsc";
+import { storyblokEditable } from "@storyblok/react/rsc";
 
 const Education = ({ blok }: { blok: EducationSectionStoryblok }) => {
   return (

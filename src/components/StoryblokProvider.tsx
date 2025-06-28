@@ -4,10 +4,10 @@ import { getStoryblokApi } from "@/lib/storyblok";
 
 export default function StoryblokProvider({
   children,
-    isEnabled
+  isEnabled,
 }: {
-  children: React.ReactNode,
-  isEnabled: boolean
+  children: React.ReactNode;
+  isEnabled: boolean;
 }) {
   getStoryblokApi(isEnabled);
   return children;

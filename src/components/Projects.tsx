@@ -3,11 +3,11 @@ import type {
   ProjectsSectionStoryblok,
   ProjectStoryblok,
 } from "@/types/component-types-sb";
-import {storyblokEditable} from "@storyblok/react/rsc";
+import { storyblokEditable } from "@storyblok/react/rsc";
 
 const Projects = ({ blok }: { blok: ProjectsSectionStoryblok }) => {
   return (
-  <div {...storyblokEditable(blok)}>
+    <div {...storyblokEditable(blok)}>
       <h2>{blok?.headline}</h2>
       <p>{blok?.subheadline}</p>
 

@@ -8,20 +8,24 @@ import Skills from "@/components/Skills";
 import Projects from "@/components/Projects";
 import Header from "@/components/Header";
 
-export const getStoryblokApi= (isEnabled: boolean) => storyblokInit({
-  accessToken: process.env.NEXT_PUBLIC_NODE_ENV === "development" || isEnabled ? process.env.NEXT_PUBLIC_STORYBLOK_PREVIEW_ACCESS_TOKEN : process.env.NEXT_PUBLIC_STORYBLOK_PUBLIC_ACCESS_TOKEN,
-  use: [apiPlugin],
-  apiOptions: {
-    region: "eu",
-  },
-  components: {
-    page: Page,
-    hero_section: Hero,
-    about_me_section: About,
-    work_experience_section: Work,
-    education_section: Education,
-    skills_section: Skills,
-    projects_section: Projects,
-    header: Header
-  },
-});
+export const getStoryblokApi = (isEnabled: boolean) =>
+  storyblokInit({
+    accessToken:
+      process.env.NEXT_PUBLIC_NODE_ENV === "development" || isEnabled
+        ? process.env.NEXT_PUBLIC_STORYBLOK_PREVIEW_ACCESS_TOKEN
+        : process.env.NEXT_PUBLIC_STORYBLOK_PUBLIC_ACCESS_TOKEN,
+    use: [apiPlugin],
+    apiOptions: {
+      region: "eu",
+    },
+    components: {
+      page: Page,
+      hero_section: Hero,
+      about_me_section: About,
+      work_experience_section: Work,
+      education_section: Education,
+      skills_section: Skills,
+      projects_section: Projects,
+      header: Header,
+    },
+  });

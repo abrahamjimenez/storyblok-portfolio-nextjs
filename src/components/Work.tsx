@@ -6,7 +6,7 @@ import type {
   WorkExperienceStoryblok,
 } from "@/types/component-types-sb";
 import { StoryblokRichTextNode } from "@storyblok/react";
-import {storyblokEditable} from "@storyblok/react/rsc";
+import { storyblokEditable } from "@storyblok/react/rsc";
 
 const { render } = richTextResolver();
 

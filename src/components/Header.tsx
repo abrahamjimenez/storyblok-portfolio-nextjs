@@ -2,6 +2,7 @@
 import React from "react";
 import type { HeaderStoryblok } from "@/types/component-types-sb";
 import { storyblokEditable } from "@storyblok/react/rsc";
+import ToggleMenu from "./common/ToggleMenu";
 
 const Hero = ({ blok }: { blok: HeaderStoryblok }) => {
   return (
@@ -12,6 +13,8 @@ const Hero = ({ blok }: { blok: HeaderStoryblok }) => {
           <a href={`#${(link?.label).toString().toLowerCase()}`}>{link?.label}</a>
         </div>
       ))}</div>
+
+      <ToggleMenu />
     </div>
   );
 };
